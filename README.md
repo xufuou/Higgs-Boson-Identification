@@ -51,13 +51,15 @@ Some of classifiers used and available in the program to perform classification:
 
 # Code 
 
+All the functions have a similar signature. The exception is the load function, function [ dataset ] = pr load( path, name ), which given the path to the data set and a name, loads and creates the structure compatible with stprtool. All the re- maining functions receive that structure, dataset, a type of operation, type, and the specific input arguments to the operation if necessary, varargin. They also return a similar output which is the new dataset and some specific output values, varargout. The output values are preserved inside the structure.
+
 * pr_missing_values(...)
 Here is where we fill the missing values. At the moment we have only one way of doing it, imputation, and it receives as argument either ’mean’ or ’median’.
 
 * pr_feature_extraction(...)
 Although this function doesn’t modify the dataset it can give us information about the feature extractions using either pca or lda.
 
-* pr_feature selection(...)
+* pr_feature_selection(...)
 This function reduces the number of features using one of the following methods: kruskal-wallis, ROC or mrMR. All of them receive the number of features to remain. mrMR receives additionally how the score is calculated, quotient or subtraction.
 
 * pr_plot()
