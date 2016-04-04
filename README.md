@@ -3,12 +3,13 @@
 We use Pattern Recognition/Machine Learning approaches to classify collision events into ”tau tau decay of a Higgs boson” versus ”background” from the data provided the Kaggle Higgs Boson Machine Learning Challenge. The program is built with MATLAB and also has a user interface to combine several techniques to get the best performance in the dataset.
 
 # Some features
-* User interface
+* User Interface
 * Pre processing tools
-* Feature extraction tools
-* Feature selection tools
+* Feature reduction/selection tools
 * Classification tools
-* Save a preset model
+* Evaluation tools
+* Save a model
+* Load a preset model
 
 # Dataset
 The provided training data set contains 200000 events, with an ID column, 30 feature columns and a label column. The label column discriminates ”background” events from events related to the “tau tau decay of a Higgs boson”. The original data set and all other details about the features can be found at https://www.kaggle.com/c/higgs-boson/ data, and at http://higgsml.lal.in2p3.fr/files/2014/04/documentation_v1.8. pdf.
