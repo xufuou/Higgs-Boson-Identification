@@ -1,6 +1,6 @@
 # Higgs-Boson-Identification
 
-Classification collision events into ”tau tau decay of a Higgs boson” versus ”background” from the data provided the Kaggle Higgs Boson Machine Learning Challenge using ML approaches on MATLAB
+We use Pattern Recognition/Machine Learning approaches to classify collision events into ”tau tau decay of a Higgs boson” versus ”background” from the data provided the Kaggle Higgs Boson Machine Learning Challenge. The program is built with MATLAB and also has a user interface to combine several techniques to get the best performance in the dataset.
 
 # Some features
 * User interface
