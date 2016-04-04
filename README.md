@@ -42,12 +42,33 @@ Some of classifiers used and available in the program to perform classification:
 # Results 
 
 | Classifier    | Accuracy      | Precision  |
-| ------------- |:-------------:| -----:     |
+| ------------- |:-------------:| :-----:     |
 | Fisher Linear | 0.8774        | 0.8484     |
 | Quadratic     | 0.8683        | 0.8698     |
 | Naives Bayes  | 0.8973        | 0.8979     |
-| SVM(RBF)      | 0.9466        | 0.9134     |
+| SVM (RBF)     | 0.9466        | 0.9134     |
 | KNN (n=5)     | 0.9339        | 0.909      |
+
+# Code 
+
+* pr_missing_values(...)
+Here is where we fill the missing values. At the moment we have only one way of doing it, imputation, and it receives as argument either ’mean’ or ’median’.
+
+* pr_feature_extraction(...)
+Although this function doesn’t modify the dataset it can give us information about the feature extractions using either pca or lda.
+
+* pr_feature selection(...)
+This function reduces the number of features using one of the following methods: kruskal-wallis, ROC or mrMR. All of them receive the number of features to remain. mrMR receives additionally how the score is calculated, quotient or subtraction.
+
+* pr_plot()
+Whenever we want to display some information, we use this function. For now, we have only three types of plots: results-pca-linproj, results-pca-eigenvalues and results-pca-table. The first two are self-explanatory, the last one will show a table with eigenvalues, variation and the respective cumulative sum.
+
+* pr_classify()
+This function trains a classifier based on the training and predicts labels for the testing data.The available classifiers: SVM, KNN, SVM, fisher-linear-discriminant and discriminant-quadratic. All of them receives the training data set and the testing data set. The KNN receives also the number of neighbours.
+
+* pr_evaluation()
+After the classification we will evaluate its performance with this function, which will compute the re-substitution error for the classifier, the error in cross-validation and also some important statistical information about the predicted label and the real ones.
+
 # Acknowledgements
 
 * STPRTool (http://cmp.felk.cvut.cz/cmp/software/stprtool/)
