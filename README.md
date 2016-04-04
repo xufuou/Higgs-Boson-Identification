@@ -20,8 +20,8 @@ Classification collision events into ”tau tau decay of a Higgs boson” versus
 
 # Additional tools
 
-Pattern recognition toolbox
-Mutual information toolbox
-minimum reduncy and Max Relevance algorithm
+* Pattern recognition toolbox
+* Mutual information toolbox
+* minimum reduncy and Max Relevance algorithm
 
 
